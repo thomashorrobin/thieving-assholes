@@ -13,12 +13,12 @@ class Tobacco extends Component {
         }
         this.setState({ doesSmoke: !this.state.doesSmoke });
     }
-    updateTobacco(){
-        const value = document.getElementById('tobacco-input').value;
+    updateTobacco(event){
+        const value = event.target.value;
         this.props.updateTobacco(value);
     }
     render(){
-        let x = <div>Packets per day: <input id="tobacco-input" onChange={this.updateTobacco.bind(this)} type="number" value={this.props.tobacco}/></div>
+        let x = <div>Packets per day: <input onChange={(event) => this.updateTobacco(event)} type="number" value={this.props.tobacco}/></div>
 
         return (
             <div className="userInput">

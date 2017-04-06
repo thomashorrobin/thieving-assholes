@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 class Income extends Component {
-    updateIncome() {
-        const value = document.getElementById('income-input').value;
+    updateIncome(event) {
+        const value = event.target.value;
         this.props.updateIncome(value);
     }
     render(){
         return (
-            <div className="userInput">Income: <input id="income-input" value={this.props.income} onChange={this.updateIncome.bind(this)} type="number" step="5000"/></div>
+            <div className="userInput">Income: <input value={this.props.income} onChange={(event) => this.updateIncome(event)} type="number" step="5000"/></div>
         );
     }
 }

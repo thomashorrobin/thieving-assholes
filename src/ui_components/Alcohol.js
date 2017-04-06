@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 class Alcohol extends Component {
-    updateAlcohol(){
-        const value = document.getElementById('alcohol-input').value;
+    updateAlcohol(event){
+        const value = event.target.value;
         this.props.updateAlcohol(value);
     }
     render(){
         return (
-            <div className="userInput">Money spent on alcohol anually: <input id="alcohol-input" onChange={this.updateAlcohol.bind(this)} type="number" step="200" value={this.props.alcohol}/></div>
+            <div className="userInput">Money spent on alcohol anually: <input onChange={(event) => {this.updateAlcohol(event)}} type="number" step="200" value={this.props.alcohol}/></div>
         );
     }
 }
