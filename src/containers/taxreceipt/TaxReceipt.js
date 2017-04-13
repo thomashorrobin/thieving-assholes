@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { estimate_alcohol_tax } from './tax_functions/alcohol_tax';
-import { estimate_fuel_tax } from './tax_functions/fuel_tax';
-import { calculateGST } from './tax_functions/goods_and_services_tax';
-import { income_tax } from './tax_functions/income_tax';
-import { annual_tax_packets_per_day } from './tax_functions/tobacco_tax';
+import { estimate_alcohol_tax } from '../../tax_functions/alcohol_tax';
+import { estimate_fuel_tax } from '../../tax_functions/fuel_tax';
+import { calculateGST } from '../../tax_functions/goods_and_services_tax';
+import { income_tax } from '../../tax_functions/income_tax';
+import { annual_tax_packets_per_day } from '../../tax_functions/tobacco_tax';
 import './TaxReceipt.css';
 
 class TaxReceipt extends Component {

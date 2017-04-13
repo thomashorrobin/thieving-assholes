@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import GST from './ui_components/GST';
-import Tobacco from './ui_components/Tobacco';
-import Income from './ui_components/Income';
-import Fuel from './ui_components/Fuel';
-import Alcohol from './ui_components/Alcohol';
+import GST from '../../ui_components/GST';
+import Tobacco from '../../ui_components/Tobacco';
+import Income from '../../ui_components/Income';
+import Fuel from '../../ui_components/Fuel';
+import Alcohol from '../../ui_components/Alcohol';
 import './Form.css';
 
 class Form extends Component {

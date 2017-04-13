@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Form from './Form';
-import TaxReceipt from './TaxReceipt';
+import Form from './containers/form/Form';
+import TaxReceipt from './containers/taxreceipt/TaxReceipt';
 
 class App extends Component {
   constructor(){
@@ -17,9 +17,11 @@ class App extends Component {
       }
     }
   }
+
   updateData(newData){
     this.setState({ data: newData });
   }
+
   render() {
     return (
       <div className="App">
